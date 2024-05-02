@@ -4,6 +4,7 @@
 [![Slack](http://img.shields.io/badge/slack-bio--crystal-purple?labelColor=000000&logo=slack)](https://bio-crystal.slack.com/)
 [![Get invite to BioCrystal](http://img.shields.io/badge/Get_invite_to_BioCrystal-purple?labelColor=000000&logo=slack)](https://join.slack.com/t/bio-crystal/shared_invite/zt-tas46pww-JSEloonmn3Ma5eD2~VeT_g)
 [![DOI](https://zenodo.org/badge/351622305.svg)](https://zenodo.org/badge/latestdoi/351622305)
+[![Docs Latest](https://img.shields.io/badge/docs-latest-blue.svg)](https://bio-cr.github.io/hts.cr/)
 
 HTS.cr provides [Crystal](https://github.com/crystal-lang/crystal) bindings for [HTSlib](https://github.com/samtools/htslib) that allows you to read and write file formats commonly used in genomics, such as [SAM, BAM, VCF, and BCF](http://samtools.github.io/hts-specs/).
 
