@@ -2,18 +2,15 @@ name: test
 on: [push, pull_request]
 jobs:
   build:
-    name: ${{ matrix.os }} Crystal ${{ matrix.crystal }}
+    name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}-latest
     strategy:
       fail-fast: false
       matrix:
         os:   [ 'ubuntu', 'macos' ]
-        crystal: [ '1.8', '1.9' ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: crystal-lang/install-crystal@v1
-        with:
-          crystal: ${{ matrix.crystal }}
       - name: Install latest HTSLib (ubuntu)
         if: ${{ matrix.os == 'ubuntu' }}
         run: |
